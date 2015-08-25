@@ -1,0 +1,55 @@
+// PUCRS/FACIN
+// Laboratório de Programação I
+// 2015-08-25
+// marco.mangan@pucrs.br
+
+/*
+Crie uma struct denominada Terreno que representa as dimensões de um terreno retangular, ou seja, largura e comprimento. Depois, declare um vetor de 100 terrenos e faça as seguintes funções:
+
+    Função que recebe o vetor e lista na tela os terrenos que são quadrados;
+    Função que recebe o vetor e retorna o terreno com maior perímetro;
+*/
+#include <iostream>
+using namespace std;
+
+struct Terreno {
+	float largura;
+	float comprimento;
+};
+
+int main()
+{
+	Terreno t1, t2;
+
+	t1.largura = 12;
+	t1.comprimento = 20;
+
+	cout << "Terrenos!" << endl;
+
+	cout << 	t1.largura << " " <<
+	t1.comprimento << endl;
+
+
+	return 0;	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
