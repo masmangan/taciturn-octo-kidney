@@ -1,0 +1,509 @@
+    1  ls
+    2  pwd
+    3  cd DriveH
+    4  pwd
+    5  man ls
+    6  man man
+    7  history
+    8  ls
+    9  clear
+   10  ls
+   11  cd 2015-2/
+   12  cd pe2/
+   13  ls
+   14  mkdir aula02
+   15  man mkdir
+   16  ls
+   17  cd aula02/
+   18  clear
+   19  ls
+   20  pwd
+   21  PS1=$
+   22  clear
+   23  history 
+   24  PS1=PE2 $
+   25  PS1=PE2$
+   26  clear
+   27  pwd
+   28  cd DriveH/2015-2/pe2/aula02/
+   29  pwd
+   30  vi hello.c
+   31  cat hello.c 
+   32  clear
+   33  exit
+   34  pwd
+   35  cd
+   36  pwd
+   37  ls
+   38  cd DriveH/
+   39  ls
+   40  cd 2015-2/
+   41  cd pe2/
+   42  cd aula02/
+   43  clear
+   44  ls
+   45  vimtutor
+   46  vi hello.c
+   47  vi hello.c
+   48  clear
+   49  gedit hello.c &
+   50  ls
+   51  c at hello.c 
+   52  cat hello.c 
+   53  ps
+   54  top
+   55  clear
+   56  ls
+   57  clear
+   58  ls
+   59  make hello
+   60  make hello
+   61  ls
+   62  ./hello
+   63  hello
+   64  clear
+   65  ls
+   66  astyle hello.c
+   67  cat hello.c
+   68  cat hello
+   69  ghex hello.c
+   70  ghex hello
+   71  clear
+   72  exit
+   73  ls
+   74  cd DriveH
+   75  cd 2015-2/
+   76  ls
+   77  cd pe2/
+   78  ls
+   79  cd taciturn-octo-kidney/
+   80  ls
+   81  mkdir aula06
+   82  cd aula06
+   83  ls
+   84  clear
+   85  gedit ex02.cc &
+   86  make ex02
+   87  make ex02
+   88  ./ex02
+   89  PS1 = $
+   90  PS1=$
+   91  clear
+   92  make ex02
+   93  ./ex02
+   94  make ex02
+   95  ./ex02
+   96  make ex02
+   97  ./ex02
+   98  make ex02
+   99  ./ex02
+  100  make ex02
+  101  ./ex02
+  102  make ex02
+  103  ./ex02
+  104  cd ..
+  105  git status
+  106  git add --all
+  107  git commit -m "aulas 5 e 6" 
+  108  git status
+  109  git push
+  110  clear
+  111  ls
+  112  cd aula06
+  113  clear
+  114  ls
+  115  clear
+  116  ls
+  117  astyle ex02.cc
+  118  make ex02
+  119  make ex02
+  120  make ex02
+  121  make ex02
+  122  ./ex02
+  123  make ex02
+  124  ./ex02
+  125  make ex02
+  126  ./ex02
+  127  make ex02
+  128  ./ex02
+  129  cd ..
+  130  git status
+  131  git add --all
+  132  git commit -m "simplificar fracao"
+  133  git push
+  134  clear
+  135  ls
+  136  cd aula06
+  137  make programa
+  138  ./programa
+  139  g++ programa.cc fracao.cc -o p1
+  140  g++ programa.cc fracao.cc -o p1
+  141  g++ programa.cc fracao.cc -o p1
+  142  ls
+  143  g++ programa2.cc fracao.cc -o p2
+  144  ./p2
+  145  ./p1
+  146  cd ..
+  147  git status
+  148  git add --all
+  149  git commit -m "biblioteca fracao"
+  150  git push
+  151  git status
+  152  clear
+  153  exit
+  154  cd DriveH
+  155  cd 2015-2/
+  156  cd pe2/
+  157  ls
+  158  cd taciturn-octo-kidney/
+  159  git status
+  160  ls
+  161  mkdir aula07
+  162  cd aula07
+  163  ls
+  164  gedit terreno.cc
+  165  bg
+  166  PS1=$
+  167  clear
+  168  make terreno
+  169  cat terreno.cc
+  170  make terreno
+  171  clear
+  172  ls
+  173  ./terreno
+  174  make terreno
+  175  make terreno
+  176  astyle terreno.cc
+  177  ./terreno
+  178  make terreno
+  179  ./terreno
+  180  make terreno
+  181  make terreno
+  182  make terreno
+  183  clear
+  184  make terreno
+  185  make terreno
+  186  ./terreno
+  187  make terreno
+  188  ./terreno
+  189  make terreno
+  190  ./terreno
+  191  make terreno
+  192  make terreno
+  193  make terreno
+  194  ./terreno
+  195  git status
+  196  cd ..
+  197  git status
+  198  git add --all
+  199  git status
+  200  git commit -m "Aula07"
+  201  git push
+  202  exit
+  203  ls
+  204  cd DriveH
+  205  cd 2015-2/
+  206  cd pe2/
+  207  ls
+  208  cd taciturn-octo-kidney/
+  209  ls
+  210  mkdir aula08
+  211  cd aula08
+  212  ls
+  213  gedit gravar.cc
+  214  bg
+  215  make gravar
+  216  make gravar
+  217  clear
+  218  PS1=$
+  219  make gravar
+  220  ls
+  221  ./gravar
+  222  ls
+  223  cat teste.txt 
+  224  ls -la
+  225  chmod a-w teste.txt 
+  226  ls -la
+  227  ./gravar
+  228  man chmod
+  229  chmod a+w teste.txt 
+  230  ls -la
+  231  ./gravar
+  232  cd ..
+  233  ls -la
+  234  cd aula08
+  235  ls
+  236  ls
+  237  history
+  238  history >> h.txt
+    1  ls
+    2  pwd
+    3  cd DriveH
+    4  pwd
+    5  man ls
+    6  man man
+    7  history
+    8  ls
+    9  clear
+   10  ls
+   11  cd 2015-2/
+   12  cd pe2/
+   13  ls
+   14  mkdir aula02
+   15  man mkdir
+   16  ls
+   17  cd aula02/
+   18  clear
+   19  ls
+   20  pwd
+   21  PS1=$
+   22  clear
+   23  history 
+   24  PS1=PE2 $
+   25  PS1=PE2$
+   26  clear
+   27  pwd
+   28  cd DriveH/2015-2/pe2/aula02/
+   29  pwd
+   30  vi hello.c
+   31  cat hello.c 
+   32  clear
+   33  exit
+   34  pwd
+   35  cd
+   36  pwd
+   37  ls
+   38  cd DriveH/
+   39  ls
+   40  cd 2015-2/
+   41  cd pe2/
+   42  cd aula02/
+   43  clear
+   44  ls
+   45  vimtutor
+   46  vi hello.c
+   47  vi hello.c
+   48  clear
+   49  gedit hello.c &
+   50  ls
+   51  c at hello.c 
+   52  cat hello.c 
+   53  ps
+   54  top
+   55  clear
+   56  ls
+   57  clear
+   58  ls
+   59  make hello
+   60  make hello
+   61  ls
+   62  ./hello
+   63  hello
+   64  clear
+   65  ls
+   66  astyle hello.c
+   67  cat hello.c
+   68  cat hello
+   69  ghex hello.c
+   70  ghex hello
+   71  clear
+   72  exit
+   73  ls
+   74  cd DriveH
+   75  cd 2015-2/
+   76  ls
+   77  cd pe2/
+   78  ls
+   79  cd taciturn-octo-kidney/
+   80  ls
+   81  mkdir aula06
+   82  cd aula06
+   83  ls
+   84  clear
+   85  gedit ex02.cc &
+   86  make ex02
+   87  make ex02
+   88  ./ex02
+   89  PS1 = $
+   90  PS1=$
+   91  clear
+   92  make ex02
+   93  ./ex02
+   94  make ex02
+   95  ./ex02
+   96  make ex02
+   97  ./ex02
+   98  make ex02
+   99  ./ex02
+  100  make ex02
+  101  ./ex02
+  102  make ex02
+  103  ./ex02
+  104  cd ..
+  105  git status
+  106  git add --all
+  107  git commit -m "aulas 5 e 6" 
+  108  git status
+  109  git push
+  110  clear
+  111  ls
+  112  cd aula06
+  113  clear
+  114  ls
+  115  clear
+  116  ls
+  117  astyle ex02.cc
+  118  make ex02
+  119  make ex02
+  120  make ex02
+  121  make ex02
+  122  ./ex02
+  123  make ex02
+  124  ./ex02
+  125  make ex02
+  126  ./ex02
+  127  make ex02
+  128  ./ex02
+  129  cd ..
+  130  git status
+  131  git add --all
+  132  git commit -m "simplificar fracao"
+  133  git push
+  134  clear
+  135  ls
+  136  cd aula06
+  137  make programa
+  138  ./programa
+  139  g++ programa.cc fracao.cc -o p1
+  140  g++ programa.cc fracao.cc -o p1
+  141  g++ programa.cc fracao.cc -o p1
+  142  ls
+  143  g++ programa2.cc fracao.cc -o p2
+  144  ./p2
+  145  ./p1
+  146  cd ..
+  147  git status
+  148  git add --all
+  149  git commit -m "biblioteca fracao"
+  150  git push
+  151  git status
+  152  clear
+  153  exit
+  154  cd DriveH
+  155  cd 2015-2/
+  156  cd pe2/
+  157  ls
+  158  cd taciturn-octo-kidney/
+  159  git status
+  160  ls
+  161  mkdir aula07
+  162  cd aula07
+  163  ls
+  164  gedit terreno.cc
+  165  bg
+  166  PS1=$
+  167  clear
+  168  make terreno
+  169  cat terreno.cc
+  170  make terreno
+  171  clear
+  172  ls
+  173  ./terreno
+  174  make terreno
+  175  make terreno
+  176  astyle terreno.cc
+  177  ./terreno
+  178  make terreno
+  179  ./terreno
+  180  make terreno
+  181  make terreno
+  182  make terreno
+  183  clear
+  184  make terreno
+  185  make terreno
+  186  ./terreno
+  187  make terreno
+  188  ./terreno
+  189  make terreno
+  190  ./terreno
+  191  make terreno
+  192  make terreno
+  193  make terreno
+  194  ./terreno
+  195  git status
+  196  cd ..
+  197  git status
+  198  git add --all
+  199  git status
+  200  git commit -m "Aula07"
+  201  git push
+  202  exit
+  203  ls
+  204  cd DriveH
+  205  cd 2015-2/
+  206  cd pe2/
+  207  ls
+  208  cd taciturn-octo-kidney/
+  209  ls
+  210  mkdir aula08
+  211  cd aula08
+  212  ls
+  213  gedit gravar.cc
+  214  bg
+  215  make gravar
+  216  make gravar
+  217  clear
+  218  PS1=$
+  219  make gravar
+  220  ls
+  221  ./gravar
+  222  ls
+  223  cat teste.txt 
+  224  ls -la
+  225  chmod a-w teste.txt 
+  226  ls -la
+  227  ./gravar
+  228  man chmod
+  229  chmod a+w teste.txt 
+  230  ls -la
+  231  ./gravar
+  232  cd ..
+  233  ls -la
+  234  cd aula08
+  235  ls
+  236  ls
+  237  history
+  238  history >> h.txt
+  239  cat h.txt
+  240  clear
+  241  man srand
+  242  man time
+  243  man 3 time
+  244  man 7 time
+  245  make gravar
+  246  ./gravar
+  247  cat teste.txt
+  248  make gravar
+  249  ./gravar
+  250  cat teste.txt
+  251  make gravar
+  252  ./gravar
+  253  cat teste.txt
+  254  make gravar
+  255  ./gravar
+  256  cat teste.txt
+  257  head teste.txt
+  258  more teste.txt
+  259  ls
+  260  open fig.ppm
+  261  start fig.ppm
+  262  clear
+  263  display fig.ppm 
+  264  ls
+  265  mv Class\ Diagram0.png stream.png
+  266  ls ..
+  267  mv ../Class\ Diagram0.asta 
+  268  mv ../Class\ Diagram0.asta  .
+  269  mv Class\ Diagram0.asta  stream.asta
+  270  ls
+  271  history >> h.txt

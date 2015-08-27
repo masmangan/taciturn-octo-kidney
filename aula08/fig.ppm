@@ -1,0 +1,9 @@
+P3
+# P3 significa que as cores são representadas em ASCII
+# 255 é o valor máximo de cada cor
+# 3 e 2 são o total de colunas e o total de linhas
+# cada linha tem os pontos especificados em RGB (red green blue)
+3 2
+255
+255   0   0     0 255   0     0   0 255
+255 255   0   255 255 255     0   0   0
