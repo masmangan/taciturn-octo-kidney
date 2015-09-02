@@ -7,6 +7,7 @@
 using namespace std;
 
 class Lampada {
+private:
     bool ligada; // false (0) ou true (1)
     int tensao;
     int potencia;
