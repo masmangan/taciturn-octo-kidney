@@ -22,9 +22,10 @@ Fracao somar(Fracao a, Fracao b)
 {
     Fracao res; // FIXME: verificar alocação automática
 
+    res.denominador = a.denominador * b.denominador;
+
     res.numerador = res.denominador/a.denominador * a.numerador
                     + res.denominador/b.denominador * b.numerador;
-    res.denominador = a.denominador * b.denominador;
 
     mostrar(res);
     return simplificar(res);
