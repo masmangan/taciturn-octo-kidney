@@ -6,66 +6,67 @@
 using namespace std;
 
 class Fracao {
-public:
-    // FIXME: tentar colocar atributos privados
+private:
     int numerador;
     int denominador;
+    Fracao simplificar();
 
+public:
     Fracao(int n, int d);
-    Fracao multiplicar(Fracao a, Fracao b);
-    void mostrar(Fracao a);
-    Fracao somar(Fracao a, Fracao b);
-    Fracao simplificar(Fracao f);
+    //Fracao();
+    Fracao multiplicar(Fracao b);
+    void mostrar();
+    Fracao somar(Fracao b);
+
 };
 
 int main()
 {
-    Fracao f1(2, 1), f2(3, 1), p(0, 0), s(1, 1);
+    Fracao f1(2, 1), f2(3, 1), p(0, 0), s(1, 1); // FIXME: novo construtor
 
-    f1.mostrar(f1);
-    f2.mostrar(f2);
+    f1.mostrar();
+    f2.mostrar();
 
-    p = f1.multiplicar(f1, f2);
+    // cout << f1 << endl;  // FIXME: cin e cout com Fracao
 
-    p.mostrar(p);
+    p = f1.multiplicar(f2);
 
-    s = f1.somar(f1, f2);
+    p.mostrar();
 
-    s.mostrar(s);
+    s = f1.somar(f2);
+
+    s.mostrar();
 
     return 0;
 }
 
 Fracao::Fracao(int n, int d)
 {
-    cout << "Fracao::Fracao" << endl;
     numerador = n;
     denominador = d;
 }
 
-Fracao Fracao::multiplicar(Fracao a, Fracao b)
+Fracao Fracao::multiplicar(Fracao b)
 {
-    int n = a.numerador * b.numerador;
-    int d = a.denominador * b.denominador;
+    int n = numerador * b.numerador;
+    int d = denominador * b.denominador;
     Fracao res(n, d); 
 
-    res.mostrar(res);
-    return res.simplificar(res);
+    return res.simplificar();
 }
 
-Fracao Fracao::somar(Fracao a, Fracao b)
+Fracao Fracao::somar(Fracao b)
 {
-    int d = a.denominador * b.denominador;
-    int n = d/a.denominador * a.numerador
-                    + d/b.denominador * b.numerador;
+    int d = denominador * b.denominador;
+    int n = d / denominador * numerador
+                    + d / b.denominador * b.numerador;
     Fracao res(n, d);
 
-    res.mostrar(res);
-    return res.simplificar(res);
+    return res.simplificar();
 }
 
 
-Fracao Fracao::simplificar(Fracao f)
+Fracao Fracao::simplificar()
 {
     // a=>numerador
     // b=>denominador
@@ -73,8 +74,9 @@ Fracao Fracao::simplificar(Fracao f)
     //   tmp = a
     //   a = b
     //   b = tmp % b
-    int a = f.numerador;
-    int b = f.denominador;
+    int a = numerador;
+    int b = denominador;
+    Fracao f(a, b);
     while(b != 0)
     {
         int tmp = a;
@@ -87,11 +89,11 @@ Fracao Fracao::simplificar(Fracao f)
     return f;
 }
 
-void Fracao::mostrar(Fracao a)
+void Fracao::mostrar()
 {
-    cout <<  a.numerador
+    cout <<  numerador
          <<  " / "
-         <<  a.denominador
+         <<  denominador
          <<  endl;
 }
 
