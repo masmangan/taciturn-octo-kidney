@@ -7,8 +7,6 @@
 
 using namespace std;
 
-// principal.cc
-
 int main()
 {
     Fracao f1(2, 1), f2(3, 1), p, s; 
@@ -17,11 +15,9 @@ int main()
     cout << f2 << endl;  
 
     p = f1.multiplicar(f2); // TODO: f1 * f2
-
     cout << p << endl;
 
     s = f1.somar(f2); // TODO: f1 + f2
-
     cout << s << endl;
 
     return 0;
