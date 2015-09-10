@@ -15,39 +15,39 @@ using namespace std;
 class Terreno {
     friend std::ostream& operator<<(std::ostream&, const Terreno&);
 private:
-    float largura;
-    float comprimento;
+	float largura;
+	float comprimento;
 public:
-    Terreno(float larg, float comp);
-    Terreno();
-    float getPerimetro();
-    bool isQuadrado();
-    void setLargura(float larg);
-    void setComprimento(float comp);
-    void redimensionar(float larg, float comp);
+	Terreno(float larg, float comp);
+	Terreno();
+	float getPerimetro();
+	bool isQuadrado();
+	void setLargura(float larg);
+	void setComprimento(float comp);
+	void redimensionar(float larg, float comp);
 };
 
 Terreno::Terreno(float larg, float comp)
 {
-    largura = larg;
-    comprimento = comp;
+	largura = larg;
+	comprimento = comp;
 }
 
 Terreno::Terreno()
 {
-    largura = 1;
-    comprimento = 1;
+	largura = 1;
+	comprimento = 1;
 }
 
 
 float Terreno::getPerimetro()
 {
-    return 2 * (largura + comprimento);
+	return 2 * (largura + comprimento);
 }
 
 bool Terreno::isQuadrado()
 {
-    return largura == comprimento;
+	return largura == comprimento;
 }
 
 void Terreno::setLargura(float larg)
@@ -55,44 +55,44 @@ void Terreno::setLargura(float larg)
 //	if (larg < 0)
 //		throw runtime_exception("A largura deve ser positiva!");
 
-    largura = larg;
+	largura = larg;
 }
 
 void Terreno::setComprimento(float comp)
 {
-    comprimento = comp;
+	comprimento = comp;
 }
 
 
 void Terreno::redimensionar(float larg, float comp)
 {
-    largura = larg;
-    comprimento = comp;
+	largura = larg;
+	comprimento = comp;
 }
 
 std::ostream& operator<<(std::ostream& s, const Terreno& t)
 {
-    s << "[L=" << t.largura << ", C=" << t.comprimento << "]";
-    return s;
+	s << "[L=" << t.largura << ", C=" << t.comprimento << "]";
+	return s;
 }
 
 
 
 int main()
 {
-    Terreno t1(12, 25), t2(10, 10), t3;
-    Terreno t[5];
+	Terreno t1(12, 25), t2(10, 10), t3;
+	Terreno t[5];
 
-    t[0].redimensionar(12, 12);
+	t[0].redimensionar(12, 12);
 
-    t[1].setLargura(120);
-    t[1].setComprimento(120);
+	t[1].setLargura(120);
+	t[1].setComprimento(120);
 
-    t[2] = t1;
+	t[2] = t1;
 
-    t[3] = t2;
+	t[3] = t2;
 
-    t[4] = t3;
+	t[4] = t3;
 
     cout << "Terrenos!" << endl;
 
@@ -101,13 +101,13 @@ int main()
         cout << t[i] << endl;
     }
 
-    cout << t1.getPerimetro() << endl;
-    cout << t2.getPerimetro() << endl;
+	cout << t1.getPerimetro() << endl;
+	cout << t2.getPerimetro() << endl;
 
-    cout << t1.isQuadrado() << endl;
-    cout << t2.isQuadrado() << endl;
+	cout << t1.isQuadrado() << endl;
+	cout << t2.isQuadrado() << endl;
 
-    return 0;
+	return 0;
 }
 
 
