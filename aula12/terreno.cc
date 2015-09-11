@@ -76,6 +76,35 @@ std::ostream& operator<<(std::ostream& s, const Terreno& t)
     return s;
 }
 
+void quadrados(Terreno ts[5]);
+Terreno perimetro(Terreno ts[5]);
+
+void quadrados(Terreno ts[5]) 
+{
+    for(int i = 0 ; i < 5 ; i++) // deveria ser i < 100!
+    {
+        if (ts[i].isQuadrado())
+        {
+            cout << ts[i] << endl;
+        }
+    }
+}
+
+Terreno perimetro(Terreno ts[5]) 
+{
+    int pos = 0;
+
+    for(int i = 0 ; i < 5 ; i++) // deveria ser i < 100!
+    {
+        if (ts[i].getPerimetro() >
+                ts[pos].getPerimetro())
+        {
+            pos  = i;
+        }
+    }
+
+    return ts[pos];
+}
 
 
 int main()
@@ -107,16 +136,13 @@ int main()
     cout << t1.isQuadrado() << endl;
     cout << t2.isQuadrado() << endl;
 
+    quadrados(t);
+
+    Terreno maior = perimetro(t);
+    cout << maior << endl;
+
+
     return 0;
 }
-
-
-
-
-
-
-
-
-
 
 
