@@ -1,0 +1,6 @@
+
+( F )  O get (consultar) não altera, o set (alterar, definir) DEVE alterar.
+( V ) O objeto inicia com um estado definido.
+( F ) O .h não é necessário.
+( V ) Friend foi usado no operador<< (Stream e Lampada)
+
