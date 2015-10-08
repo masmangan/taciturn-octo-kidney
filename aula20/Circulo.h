@@ -12,8 +12,8 @@ private:
 public:
 	Circulo(int px, int py, int praio, int pcor);
 	Circulo();
-	//int getX();
-	//int getY();
+	int getX();
+	int getY();
 	//int getRaio();
 	//int getCor();
 	//void setX(int px);

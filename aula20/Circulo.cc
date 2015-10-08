@@ -15,6 +15,14 @@ Circulo::Circulo() {
     cor = 0;
 }
 
+int Circulo::getX() {
+    return x;
+}
+
+int Circulo::getY() {
+    return y;
+}
+
 std::ostream& operator<<(std::ostream& s, const Circulo& c) {
 
     s << "X=" << c.x;
