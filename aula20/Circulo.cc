@@ -17,6 +17,12 @@ Circulo::Circulo() {
 
 std::ostream& operator<<(std::ostream& s, const Circulo& c) {
 
+    s << "X=" << c.x;
+    s << " Y=" << c.y;
+    s << " R=" << c.raio;
+    s << " C=" << c.cor;
+
+    return s;
 }
 
 

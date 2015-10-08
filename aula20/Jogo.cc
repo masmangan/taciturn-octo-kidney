@@ -9,5 +9,7 @@ int main() {
 
     cout << "Jogo dos Círculos." << endl;
 
+    cout << c1 << endl;
+
     cout << "*FIM*" << endl;
 }

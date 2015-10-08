@@ -1,5 +1,5 @@
 // Circulo.h
-
+#include <iostream>
 class Circulo {
 
    friend std::ostream& operator<<(std::ostream&, const Circulo&);
