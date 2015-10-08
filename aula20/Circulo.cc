@@ -1,5 +1,6 @@
 // Circulo.cc
 #include "Circulo.h"
+#include <cmath>
 
 Circulo::Circulo(int px, int py, int praio, int pcor) {
     x = px;
@@ -15,12 +16,22 @@ Circulo::Circulo() {
     cor = 0;
 }
 
-int Circulo::getX() {
-    return x;
-}
+//int Circulo::getX() {
+//    return x;
+//}
 
-int Circulo::getY() {
-    return y;
+//int Circulo::getY() {
+//    return y;
+//}
+
+bool Circulo::acertou(int tx, int ty) {
+    float d = sqrt(pow(x - tx, 2.0) + pow(y - ty, 2.0));   
+
+    if (d <= raio)
+        return true;
+    else
+        return false;
+
 }
 
 std::ostream& operator<<(std::ostream& s, const Circulo& c) {

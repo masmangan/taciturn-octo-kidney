@@ -1,6 +1,5 @@
 // Jogo.cc
 #include <iostream>
-#include <cmath>
 #include "Circulo.h"
 
 using namespace std;
@@ -8,19 +7,22 @@ using namespace std;
 int main() {
     Circulo c1;
     int x, y;
-    float d;
+    bool acerto;
 
     cout << "Jogo dos Círculos." << endl;
 
-    cout << "Círculo:";
-    cout << c1 << endl;
+    while (1) {
+        cout << "Círculo:";
+        cout << c1 << endl;
 
-    cout << "Informe x e y:";
-    cin >> x >> y;
+        cout << "Informe x e y:";
+        cin >> x >> y;
 
-    d = sqrt(pow(c1.getX() - x, 2.0) + pow(c1.getY() - y, 2.0));   
+        acerto = c1.acertou(x, y);
+        cout << "R=" << acerto << endl;
 
-    cout << "D=" << d << endl;
-
+        if (acerto == 1)
+            break;
+    }
     cout << "*FIM*" << endl;
 }
