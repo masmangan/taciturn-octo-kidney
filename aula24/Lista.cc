@@ -12,6 +12,7 @@ public:
 	Lista();
 	void add(int v);
 	bool procura(int v);
+	int conta_ocorrencias(int v);
 };
 
 Lista::Lista() {
@@ -30,10 +31,22 @@ bool Lista::procura(int v) {
 		if (*iter == v)
 			return true;
 	}
-
+	
 	return false;	
 }
 
+int Lista::conta_ocorrencias(int v) {
+	list<int>::iterator iter;
+	int c = 0;
+
+	for( iter = valores.begin() ; iter != valores.end() ; iter++ )
+	{
+		if (*iter == v)
+			c++;
+	}
+	
+	return c;	
+}
 
 ostream& operator<<(ostream& s, Lista& lst) {
 	list<int>::iterator iter;
@@ -65,6 +78,7 @@ int main() {
 	cout << lst.procura(3) << endl;	
 	cout << lst.procura(1) << endl;	
 
+	cout << lst.conta_ocorrencias(3) << endl;	
 	
 }
 
