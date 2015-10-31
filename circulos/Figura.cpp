@@ -4,7 +4,7 @@
 using namespace std;
 
 Figura::Figura (float x, float y) {
-	this->x = x;
-	this->y = y;
+    this->x = x;
+    this->y = y;
 }
 

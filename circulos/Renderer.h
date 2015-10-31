@@ -4,15 +4,15 @@
 class ListaDeFigurasPolim;
 
 class Renderer {
-	public:
-		Renderer(ListaDeFigurasPolim* lista);
-		virtual void paint();
-		virtual void keyboard(unsigned char key, int x, int y);
-		// 
-		virtual void mouse(int button, int state, int x, int y);
+public:
+    Renderer(ListaDeFigurasPolim* lista);
+    virtual void paint();
+    virtual void keyboard(unsigned char key, int x, int y);
+    //
+    virtual void mouse(int button, int state, int x, int y);
 
-	protected:
-		ListaDeFigurasPolim* lista;
+protected:
+    ListaDeFigurasPolim* lista;
 };
 
 #endif
