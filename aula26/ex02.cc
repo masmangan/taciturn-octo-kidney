@@ -19,14 +19,17 @@ int main()
     ifstream input;
 
     cout << "Exercício 1" << endl;
-    input.open("dados.txt");     // abrir arquivo
+    input.open("dados1.txt");     // abrir arquivo
 
-    // repetir 10 vezes
-    for ( int i = 0 ; i < 10 ; i ++ )     
-    {
-        int x;      
+    int x;      
+    while (1) {
         input >> x;     //   ler numero
-        s.push(x);      //   incluir numero na pilha
+        if (x == 0)
+            break;
+        else if ( x > 0)
+            s.push(x);      //   incluir numero na pilha
+        else if ( ! s.empty() )
+            s.pop();
     }
     input.close();      // fechar arquivo
 
