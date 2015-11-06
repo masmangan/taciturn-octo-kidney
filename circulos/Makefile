@@ -9,8 +9,8 @@ OBJETOS = $(FONTES:.cpp=.o)
 
 main: $(OBJETOS)
 ## http://stackoverflow.com/questions/18550265/compiling-a-c-program-that-uses-opengl-in-mac-os-x
-##	$(CXX) $(OBJETOS) -o main -lGL -lGLU -lglut
-	$(CXX) -framework OpenGL -framework GLUT $(OBJETOS) -o main 
+	$(CXX) $(OBJETOS) -o main -lGL -lGLU -lglut
+##	$(CXX) -framework OpenGL -framework GLUT $(OBJETOS) -o main 
 	
 clean:
 	-@ rm -f $(OBJETOS)
