@@ -10,6 +10,7 @@ class cliente {
 private:
     string email;
     string senha;
+
 public:
     cliente(string, string);
     cliente();
