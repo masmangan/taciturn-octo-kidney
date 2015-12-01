@@ -8,7 +8,7 @@ cadastro::cadastro(string arquivo) {
     string e;
     string s;
 
-    dados.open(arquivo);
+    dados.open(arquivo.c_str());
 
     while (!dados.eof()) {
         dados >> e;
